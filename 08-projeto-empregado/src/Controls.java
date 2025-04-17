@@ -1,7 +1,7 @@
 public class Controls {
     private Empregado[] empregado = new Empregado[5];
     private int index =0;
-
+// vai puxar tudo dentro da super classe Empregado.
     public void inserir(Empregado empregado){
         this.empregado[index++] = empregado;
     }
@@ -15,7 +15,7 @@ public class Controls {
         return null;
     }
 
-    public String Listar(){
+    public String listar(){
         String aux = "";
         for (int i=0;i<index;i++){
             aux += empregado[i] + "\n";
